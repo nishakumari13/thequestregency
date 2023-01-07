@@ -1,0 +1,28 @@
+.main-swiper{
+    width: 37vw;
+    margin: 0 auto;
+    /* height: 40vh; */
+}
+.inner-swiper{
+    width: 100%;
+    height: 100%;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (min-width:767px) and (max-width:1024px){
+    .main-swiper{
+        width: 45vw;
+        margin: 0 auto;
+        /* height: 35vh; */
+    } 
+}
+@media screen and (min-width:240px) and (max-width:766px){
+    .main-swiper {
+        width: 90%;
+        margin: 0 auto;
+        height: 35vh;
+        margin-bottom: 3rem;
+    }
+}

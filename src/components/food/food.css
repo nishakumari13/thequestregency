@@ -1,0 +1,64 @@
+.main-card{
+    margin-top:60px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 10rem !important;
+}
+.header-proj{
+    display: flex;
+}
+.heading-proj{
+    font-size: 27px;
+    font-style: normal;
+    font-family: auto;
+    font-weight: 600;
+    color: var(--light-color);
+    text-align: left;
+}
+.hr-proj{
+    width: 50%;
+    height: 1px;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    border: none;
+    background: lightslategray;
+}
+
+.inner-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.food-item{
+    
+    width: 33%;
+    margin: 1rem;
+    /* height: 200px; */
+}
+.img{
+    width: 100%;
+    height: 180px;
+}
+.text{
+    margin: 1rem;
+    font-size: 16px;
+    font-family: emoji;
+    font-weight: 300;
+    color: white;
+}
+
+@media screen and (max-width:766px){
+    .main-card{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 5rem !important;
+    }
+    .food-item{
+        width:50%;
+        margin:0.5rem;
+    }
+    .img{
+        height: 150px;
+    }
+}
