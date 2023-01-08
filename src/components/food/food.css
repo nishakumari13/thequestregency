@@ -30,6 +30,9 @@
     justify-content: center;
     width: 100%;
 }
+.mobile-view{
+    display: none;
+}
 .food-item{
     
     width: 33%;
@@ -47,8 +50,22 @@
     font-weight: 300;
     color: white;
 }
+@media screen and (min-width:767px) and (max-width:998px){
+    .desktop-view{
+        display: none;
+    }
+    .mobile-view{
+        display: flex;
+    }
+}
 
 @media screen and (max-width:766px){
+    .desktop-view{
+        display: none;
+    }
+    .mobile-view{
+        display: flex;
+    }
     .main-card{
         width: 80%;
         margin: 0 auto;

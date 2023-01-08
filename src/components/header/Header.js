@@ -4,7 +4,6 @@ import logo from "../../images/logo.jpeg";
 import "../header/header.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { isAndroid, isDesktop, isIOS, isMobile } from "react-device-detector";
 
 const Header = () => {
   const [isMenuToggle, setIsMenuToggle] = useState(false);
@@ -21,52 +20,51 @@ const Header = () => {
             alt="logo"
           />
         </div>
-        {isMobile ? (
-          <>
-            <div className="hamburger-menu">
-              {isMenuToggle ? (
-                <CloseIcon onClick={handleOptions} className="cross-icon" />
-              ) : (
-                <MenuIcon onClick={handleOptions} className="menu-icon" />
-              )}
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="right-header animate__animated animate__slideInDown">
-              <a
-                className="options animate__animated animate__slideInDown active"
-                href="#home-id"
-              >
-                Home
-              </a>
-              <a
-                className="options animate__animated animate__slideInDown"
-                href="#skills-id"
-              >
-                Services
-              </a>
-              <a
-                className="options animate__animated animate__slideInDown"
-                href="#project-id"
-              >
-                Our Hotel
-              </a>
-              <a
-                className="options animate__animated animate__slideInDown"
-                href="#food-id"
-              >
-                Cuisines
-              </a>
-              <a
-                className="options animate__animated animate__slideInDown"
-                href="#contact-id"
-              >
-                Contact
-              </a>
-            </div>
-          </>
-        )}
+
+        <>
+          <div className="hamburger-menu mobile-view">
+            {isMenuToggle ? (
+              <CloseIcon onClick={handleOptions} className="cross-icon" />
+            ) : (
+              <MenuIcon onClick={handleOptions} className="menu-icon" />
+            )}
+          </div>
+        </>
+
+        <>
+          <div className="right-header desktop-view animate__animated animate__slideInDown">
+            <a
+              className="options animate__animated animate__slideInDown active"
+              href="#home-id"
+            >
+              Home
+            </a>
+            <a
+              className="options animate__animated animate__slideInDown"
+              href="#skills-id"
+            >
+              Services
+            </a>
+            <a
+              className="options animate__animated animate__slideInDown"
+              href="#project-id"
+            >
+              Our Hotel
+            </a>
+            <a
+              className="options animate__animated animate__slideInDown"
+              href="#food-id"
+            >
+              Cuisines
+            </a>
+            <a
+              className="options animate__animated animate__slideInDown"
+              href="#contact-id"
+            >
+              Contact
+            </a>
+          </div>
+        </>
       </div>
       {isMenuToggle ? (
         <div className="mobile-menu animate__animated animate__slideInDown">
@@ -74,6 +72,7 @@ const Header = () => {
             <a
               className="mobile-options animate__animated animate__slideInDown"
               href="#home-id"
+              onClick={handleOptions}
             >
               Home
             </a>
@@ -82,6 +81,7 @@ const Header = () => {
             <a
               className="mobile-options animate__animated animate__slideInDown"
               href="#skills-id"
+              onClick={handleOptions}
             >
               Services
             </a>
@@ -90,6 +90,7 @@ const Header = () => {
             <a
               className="mobile-options animate__animated animate__slideInDown"
               href="#project-id"
+              onClick={handleOptions}
             >
               Our Hotel
             </a>
@@ -98,6 +99,7 @@ const Header = () => {
             <a
               className="mobile-options animate__animated animate__slideInDown"
               href="#food-id"
+              onClick={handleOptions}
             >
               Cuisines
             </a>
@@ -106,6 +108,7 @@ const Header = () => {
             <a
               className="mobile-options animate__animated animate__slideInDown"
               href="#contact-id"
+              onClick={handleOptions}
             >
               Contact
             </a>

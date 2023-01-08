@@ -5,46 +5,41 @@ import hotel from "../../images/hotel.jpeg";
 import EmailIcon from "@mui/icons-material/Email";
 import { BsFacebook } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
-import { isAndroid, isDesktop, isIOS, isMobile } from "react-device-detector";
 
 const Home = () => {
   return (
     <>
       <div className="home" id="home-id">
-        {isMobile ? (
-          ""
-        ) : (
-          <div className="home-icons">
-            <hr className="hr" />
-            <BsFacebook
-              className="leet-icons"
-              onClick={() =>
-                window.open(
-                  "https://www.facebook.com/profile.php?id=100089342196032"
-                )
-              }
-            />
-            <BsInstagram
-              className="code-icons"
-              onClick={() =>
-                window.open("https://www.instagram.com/thequestregency/")
-              }
-            />
-            <EmailIcon
-              className="mail-icons"
-              onClick={() =>
-                window.open(
-                  "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=thequestregency@gmail.com"
-                )
-              }
-            />
-            <hr className="hr" />
-          </div>
-        )}
+        <div className="home-icons desktop-icons">
+          <hr className="hr" />
+          <BsFacebook
+            className="leet-icons"
+            onClick={() =>
+              window.open(
+                "https://www.facebook.com/profile.php?id=100089342196032"
+              )
+            }
+          />
+          <BsInstagram
+            className="code-icons"
+            onClick={() =>
+              window.open("https://www.instagram.com/thequestregency/")
+            }
+          />
+          <EmailIcon
+            className="mail-icons"
+            onClick={() =>
+              window.open(
+                "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=thequestregency@gmail.com"
+              )
+            }
+          />
+          <hr className="hr" />
+        </div>
         <div>
           <div className="inner-container">
-            {isMobile ? (
-              <>
+            <>
+              <div className="inner-container mobile-views">
                 <div className="left-container">
                   <img
                     className="hotel animate__animated animate__slideInDown"
@@ -75,9 +70,10 @@ const Home = () => {
                     </a>
                   </div>
                 </div>
-              </>
-            ) : (
-              <>
+              </div>
+            </>
+            <>
+              <div className="inner-container desktop-views">
                 <div className="right-container animate__animated animate__slideInUp">
                   <div>
                     <p className="text">
@@ -108,8 +104,8 @@ const Home = () => {
                     alt="hotel"
                   />
                 </div>
-              </>
-            )}
+              </div>
+            </>
           </div>
         </div>
       </div>

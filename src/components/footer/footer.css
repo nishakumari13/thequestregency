@@ -32,3 +32,18 @@ p{
     gap: 2rem;
     margin: 0 auto;
 }
+.mobile-footer{
+    display: none;
+}
+@media screen and (min-width:767px) and (max-width:998px){
+  
+    .mobile-footer{
+        display: flex;
+    }
+}
+@media screen and (max-width:767px) {
+    .mobile-footer{
+        display: flex;
+    }
+    
+}
