@@ -77,5 +77,6 @@
     }
     .img{
         height: 150px;
+        margin:0;
     }
 }

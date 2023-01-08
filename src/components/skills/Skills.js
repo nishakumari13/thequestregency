@@ -16,9 +16,9 @@ const Skills = () => {
               <article className="experience_details">
                 <DoneAllIcon className="experience_details_icons" />
                 <div className="content-text">
-                  <h4 className="content-style">Free Wi-fi</h4>
+                  <h4 className="content-style">Free Wi-Fi</h4>
                   <small className="text-light">
-                    Our hotel is equipped with best Wi-fi services that you
+                    Our hotel is equipped with best Wi-Fi services that you
                     expect from a hospitality service provider
                   </small>
                 </div>
