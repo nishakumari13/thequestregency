@@ -1,26 +1,27 @@
-.main-swiper{
-    width: 37vw;
+.food-swiper{
+width: 18vw ;
     margin: 0 auto;
-    /* height: 40vh; */
+    height: 26vh;
 }
-.inner-swiper{
+
+.food-inner-swiper{
     width: 100%;
     height: 100%;
 }
-.img{
+.food-img{
     width: 100%;
     height: 100%;
 }
 @media screen and (min-width:767px) and (max-width:1024px){
-    .main-swiper{
-        width: 45vw;
+    .food-swiper{
+        width: 30vw !important;
         margin: 0 auto;
-        /* height: 35vh; */
+        height: 25vh;
     } 
 }
 @media screen and (min-width:240px) and (max-width:766px){
-    .main-swiper {
-        width: 100%;
+    .food-swiper {
+        width: 35vw;
         margin: 0 auto;
         height: 18vh;
         /* margin-bottom: 3rem; */

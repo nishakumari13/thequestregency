@@ -27,11 +27,11 @@ const FoodSwiper = ({ dish, delay }) => {
   return (
     <>
       <div>
-        <div className="main-swiper">
+        <div className="food-swiper">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, EffectFade, A11y]}
-            className="inner-swiper"
+            className="food-inner-swiper"
             spaceBetween={0}
             slidesPerView={1}
             // navigation
@@ -42,15 +42,15 @@ const FoodSwiper = ({ dish, delay }) => {
             onSlideChange={() => console.log("slide change")}
             loop={true}
             autoplay={{
-              delay: 2500,
+              delay: 2000,
               disableOnInteraction: false,
             }}
           >
             {dish.map((item) => {
               return (
-                <SwiperSlide className="cards">
+                <SwiperSlide className="food-cards">
                   <img
-                    class="img animate__animated animate__fadeIn"
+                    class="food-img animate__animated animate__fadeIn"
                     src={item.img}
                     alt="dog-profile"
                   />

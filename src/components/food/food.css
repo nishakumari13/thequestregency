@@ -1,6 +1,7 @@
 .main-card{
     margin-top:60px;
-    width: 60%;
+    /* width: 60%; */
+    width: 70%;
     margin: 0 auto;
     margin-bottom: 10rem !important;
 }
@@ -56,6 +57,9 @@
     }
     .mobile-view{
         display: flex;
+    }
+    .food-item{
+        width:auto;
     }
 }
 
