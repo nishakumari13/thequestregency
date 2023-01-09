@@ -1,13 +1,10 @@
 import React from "react";
-import food1 from "../../images/food12.jpeg";
-import food2 from "../../images/food2.jpeg";
-import food3 from "../../images/food11.jpeg";
-import food4 from "../../images/food4.jpeg";
-import food5 from "../../images/food14.jpeg";
-import food6 from "../../images/food13.jpeg";
 import "./food.css";
+import FoodSwiper from "./FoodSwiper.js";
+import { data } from "./data";
 
 function FoodCards() {
+  console.log("data", data);
   return (
     <div className="main-card" id="food-id">
       <div className="header-proj">
@@ -17,34 +14,35 @@ function FoodCards() {
 
       <>
         <div className="inner-card mobile-view">
-          <div className="food-item">
-            <img src={food1} className="img" alt="food1" />
+          <div className="food-item ">
+            <FoodSwiper dish={data[0].mughlai} />
             <div className="text">
               <p>Mughlai</p>
             </div>
           </div>
-          <div className="food-item">
-            <img src={food2} className="img" alt="food1" />
+
+          <div className="food-item ">
+            <FoodSwiper dish={data[0].chinese} />
             <p className="text">Chinese</p>
           </div>
         </div>
         <div className="inner-card mobile-view">
-          <div className="food-item">
-            <img src={food3} className="img" alt="food1" />
+          <div className="food-item ">
+            <FoodSwiper dish={data[0].bread} />
             <p className="text">Breads</p>
           </div>
-          <div className="food-item">
-            <img src={food4} className="img" alt="food1" />
+          <div className="food-item ">
+            <FoodSwiper dish={data[0].starters} />
             <p className="text">Starters</p>
           </div>
         </div>
         <div className="inner-card mobile-view">
-          <div className="food-item">
-            <img src={food5} className="img" alt="food1" />
+          <div className="food-item ">
+            <FoodSwiper dish={data[0].indian} />
             <p className="text">North Indian</p>
           </div>
-          <div className="food-item">
-            <img src={food6} className="img" alt="food1" />
+          <div className="food-item ">
+            <FoodSwiper dish={data[0].dessert} />
             <p className="text">Desserts</p>
           </div>
         </div>
@@ -52,32 +50,32 @@ function FoodCards() {
 
       <>
         <div className="inner-card desktop-view">
-          <div className="food-item">
-            <img src={food1} className="img" alt="food1" />
+          <div className="food-item ">
+            <FoodSwiper dish={data[0].mughlai} />
             <div className="text">
               <p>Mughlai</p>
             </div>
           </div>
-          <div className="food-item">
-            <img src={food2} className="img" alt="food1" />
+          <div className="food-item ">
+            <FoodSwiper dish={data[0].chinese} />
             <p className="text">Chinese</p>
           </div>
-          <div className="food-item">
-            <img src={food3} className="img" alt="food1" />
+          <div className="food-item ">
+            <FoodSwiper dish={data[0].bread} />
             <p className="text">Breads</p>
           </div>
         </div>
         <div className="inner-card desktop-view">
-          <div className="food-item">
-            <img src={food4} className="img" alt="food1" />
+          <div className="food-item ">
+            <FoodSwiper dish={data[0].starters} />
             <p className="text">Starters</p>
           </div>
-          <div className="food-item">
-            <img src={food5} className="img" alt="food1" />
+          <div className="food-item ">
+            <FoodSwiper dish={data[0].indian} />
             <p className="text">North Indian</p>
           </div>
-          <div className="food-item">
-            <img src={food6} className="img" alt="food1" />
+          <div className="food-item ">
+            <FoodSwiper dish={data[0].dessert} />
             <p className="text">Desserts</p>
           </div>
         </div>
