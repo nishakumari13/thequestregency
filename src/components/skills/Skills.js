@@ -18,8 +18,7 @@ const Skills = () => {
                 <div className="content-text">
                   <h4 className="content-style">Free Wi-Fi</h4>
                   <small className="text-light">
-                    Our hotel is equipped with best Wi-Fi services that you
-                    expect from a hospitality service provider
+                    Our hotel comes equipped with best Wi-Fi services
                   </small>
                 </div>
               </article>

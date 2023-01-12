@@ -38,10 +38,10 @@ const Footer = () => {
         <div className="info">
           Designed & Built by Pheonix Pixel Technologies
         </div>
-        {/* <div className="info">
+        <div className="info">
           <AiOutlineCopyrightCircle />
           <p>2023 All Rights Reserved</p>
-        </div> */}
+        </div>
         <div className="stars">
           <AiOutlineStar />
         </div>

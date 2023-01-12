@@ -17,7 +17,7 @@ const Contact = () => {
             <div>
               <div className="content">
                 <h4 className="content-style">
-                  Our dedicated staffs are available round the clock for any
+                  Our dedicated staff are available round the clock for any
                   asistance you need related to service or bookings.
                 </h4>
               </div>

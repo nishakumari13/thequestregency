@@ -23,7 +23,7 @@ const Projects = () => {
             <p className="text">
               Our 14 magnificent air-conditioned rooms were created with your
               comfort and convenience in mind. If you are looking for a soothing
-              and refreshing stay. The perfect getaway couldn't be any better.
+              and refreshing stay, the perfect getaway couldn't be any better.
             </p>
             <br />
           </div>
