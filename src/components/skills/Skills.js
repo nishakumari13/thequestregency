@@ -48,7 +48,7 @@ const Skills = () => {
                   <h4 className="content-style">Online Payments</h4>
                   <small className="text-light">
                     Making the payment hastle free for your stay is one of our
-                    top priorty.
+                    top priorties.
                   </small>
                 </div>
               </article>
